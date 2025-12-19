@@ -19,7 +19,7 @@ export interface OrderData {
 // لإعادة تفعيل الألوان، قم بتغيير قيمة isAvailable إلى true أو احذف الخاصية تماماً
 const variants = [
     { color: 'Black', scent: 'Gu Long', label: 'الأسود', bg: 'bg-black', price: 3900, isAvailable: true },
-    { color: 'Red', scent: 'Gardenia', label: 'الأحمر', bg: 'bg-red-600', price: 3900, isAvailable: true },
+    { color: 'Red', scent: 'Gardenia', label: 'الأحمر', bg: 'bg-red-600', price: 3900, isAvailable: false },
     { color: 'Grey', scent: 'Healton', label: 'الرمادي', bg: 'bg-slate-500', price: 3600, isAvailable: false },
     { color: 'Green', scent: 'Osmanthus', label: 'الأخضر', bg: 'bg-emerald-600', price: 3400, isAvailable: true },
     { color: 'Blue', scent: 'Ocean', label: 'الأزرق', bg: 'bg-blue-600', price: 3400, isAvailable: false }
