@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>روبوت معطر السيارة الذكي - طوموبيلتك تفحفح بالفخامة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Tajawal', 'sans-serif'],
+              heading: ['Cairo', 'sans-serif'],
+            },
+            colors: {
+              primary: {
+                50: '#f8f9fa',
+                500: '#1a1a1a',
+                600: '#111111',
+                gold: '#D4AF37',
+              },
+              accent: {
+                blue: '#007bff',
+                emerald: '#10b981'
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html { scroll-behavior: smooth; }
+      body { font-family: 'Tajawal', sans-serif; overflow-x: hidden; background-color: #fcfcfc; }
+      h1, h2, h3, h4, h5, h6 { font-family: 'Cairo', sans-serif; }
+      .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+      @keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-10px); } 100% { transform: translateY(0px); } }
+      .float-animation { animation: float 3s ease-in-out infinite; }
+      .scroll-target { opacity: 0; transition: all 0.8s ease-out; transform: translateY(20px); }
+      .scroll-target.visible { opacity: 1; transform: translateY(0); }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+<meta name="facebook-domain-verification" content="q5ehnmjyaii99qzl97jiglea1mxj9q" />
+<!-- Meta Pixel Code -->
+<script>
+  const FB_PIXEL_ID = '1255316042823764'; 
+  const FB_TEST_EVENT_CODE = ''; 
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  if (FB_TEST_EVENT_CODE) fbq('init', FB_PIXEL_ID, { test_event_code: FB_TEST_EVENT_CODE });
+  else fbq('init', FB_PIXEL_ID);
+  fbq('track', 'PageView');
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1255316042823764&ev=PageView&noscript=1"/></noscript>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
