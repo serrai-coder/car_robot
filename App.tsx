@@ -44,11 +44,13 @@ const App: React.FC = () => {
       <HeaderBar />
       <Header onOrderSuccess={handleOrderSuccess} />
       <main>
+        {/* تم نقل نموذج الطلب إلى هنا ليكون تحت الهيدر مباشرة لجذب الزبون فوراً */}
+        <SpecialOffer onOrderSuccess={handleOrderSuccess} />
+        
         <ProblemSolution />
         <HealthBenefits />
         <ProductDetails />
         <Testimonials />
-        <SpecialOffer onOrderSuccess={handleOrderSuccess} />
         <FAQ />
       </main>
       <Footer />
